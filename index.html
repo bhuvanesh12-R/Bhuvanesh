@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIT-JuiceShop - Fresh & Delicious Juices in Coimbatore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <style>
+        /* Custom font for the brand name */
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        /* Custom font for body text */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for hero text */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-bg {
+             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579584393943-7b8583e083a2?q=80&w=1974&auto=format&fit=crop');
+             background-size: cover;
+             background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-pacifico text-green-600">KIT-JuiceShop</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-green-600 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300">About</a>
+                <a href="#menu" class="text-gray-600 hover:text-green-600 transition duration-300">Menu</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-sm hover:bg-green-50">Home</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-green-50">About</a>
+            <a href="#menu" class="block py-2 px-6 text-sm hover:bg-green-50">Menu</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-green-50">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white text-center">
+        <div class="bg-black/30 p-8 md:p-12 rounded-xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 fade-in-up" style="animation-delay: 0.2s;">Taste the Freshness</h1>
+            <p class="text-lg md:text-2xl mb-8 fade-in-up" style="animation-delay: 0.4s;">Freshly squeezed juices, made with love in Coimbatore.</p>
+            <a href="#menu" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 fade-in-up" style="animation-delay: 0.6s;">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16 md:py-24">
+
+        <!-- About Section -->
+        <section id="about" class="mb-16 md:mb-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <img src="./images/bimg1.jpg" alt="Fresh fruits for juice" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-green-800">Welcome to Our Juice Haven</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Meet Bhuvanesh, the heart and soul behind KIT-JuiceShop. With a passion for health and a love for nature's bounty, he started this journey to bring the freshest and most delicious juices to the people of Coimbatore.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We believe in simplicity and quality. Every glass of juice is made-to-order from the finest locally sourced fruits, with no added sugars or preservatives. It's pure, wholesome goodness in every sip.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="text-center mb-16 md:mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-green-800">Our Fresh Menu</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">A delightful selection of juices to refresh your day. Custom blends are available upon request!</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=1974&auto=format&fit=crop" alt="Orange Juice" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Classic Orange</h3>
+                        <p class="text-gray-500 mb-4">A timeless classic, packed with Vitamin C.</p>
+                        <span class="font-bold text-green-600 text-lg">₹80</span>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?q=80&w=1974&auto=format&fit=crop" alt="Pineapple Juice" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tropical Pineapple</h3>
+                        <p class="text-gray-500 mb-4">Sweet and tangy, a perfect tropical escape.</p>
+                        <span class="font-bold text-green-600 text-lg">₹90</span>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <img src="./images/wimage1.jpg" alt="Watermelon Juice" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cool Watermelon</h3>
+                        <p class="text-gray-500 mb-4">The ultimate thirst quencher for a hot day.</p>
+                        <span class="font-bold text-green-600 text-lg">₹70</span>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <img src="./images/img2.jpg" alt="Mixed Fruit Juice" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Rainbow Blend</h3>
+                        <p class="text-gray-500 mb-4">A mix of seasonal fruits for a burst of flavor.</p>
+                        <span class="font-bold text-green-600 text-lg">₹120</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="bg-green-700 text-white rounded-2xl p-8 md:p-16 text-center reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Visit Us!</h2>
+                <p class="mb-8 max-w-2xl mx-auto">We're located in the heart of Coimbatore, ready to serve you the freshest juices. Drop by and say hello!</p>
+                <div class="flex justify-center">
+                    <a href="https://www.google.com/maps/dir//Pappampatti+Rd,+Pallapalayam,+Kannampalayam,+Tamil+Nadu+641402/@11.0022428,77.0684164,14.42z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85695d582db7b:0x55286f9c43c3294d!2m2!1d77.0843437!2d10.9993751?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="bg-white text-green-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Get Directions</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-pacifico text-2xl text-green-400 mb-4">KIT-JuiceShop</p>
+            <p>&copy; 2024 KIT-JuiceShop. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed By Bhuvanesh</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Add shadow to header on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+
+        // ScrollReveal animations
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '50px',
+            duration: 800,
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            reset: false
+        });
+    </script>
+
+</body>
+</html>
